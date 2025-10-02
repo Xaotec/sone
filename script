@@ -59,4 +59,3 @@ curl -s [https://soneium.org/genesis.json](https://soneium.org/genesis.json) > $
 PERSISTENT_PEERS="peer_id_1@ip_1:port_1,peer_id_2@ip_2:port_2"
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PERSISTENT_PEERS\"/" $HOME/.soneiumd/config/config.toml
 
-echo "Setup complete. Binary built and node initialized. Run 'soneiumd start' to sync."
